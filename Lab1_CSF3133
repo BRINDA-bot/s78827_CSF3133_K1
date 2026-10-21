@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title in the browser tab -->
+    <title>About Me - Personal Webpage</title>
+</head>
+<body>
+
+    <!-- Main Header Section -->
+    <header>
+        <h1>Hello, My Name is Zane!</h1>
+    </header>
+
+    <!-- About Me & Hobbies Introduction Section -->
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Welcome to my personal webpage! In my free time, I love spending time outdoors and learning new technologies.<br>
+            My <strong>absolute favorite</strong> pastime is photography because it helps me capture <em>unforgettable moments</em> in nature.
+        </p>
+    </section>
+
+    <!-- Hobby Image Section -->
+    <section>
+        <h2>My Favorite Hobby</h2>
+        <!-- You can replace this link with any image URL or local photo file -->
+        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400" alt="Vintage camera on a wooden table">
+    </section>
+
+    <!-- Ordered List: Favorite Movies or Books -->
+    <section>
+        <h2>My Top 4 Favorite Movies</h2>
+        <ol>
+            <li>Interstellar</li>
+            <li>Inception</li>
+            <li>The Lord of the Rings</li>
+            <li>Spider-Man: Into the Spider-Verse</li>
+        </ol>
+    </section>
+
+    <!-- Unordered List: Top 3 Hobbies -->
+    <section>
+        <h2>My Top 3 Hobbies</h2>
+        <ul>
+            <li>Landscape Photography</li>
+            <li>Playing Badminton</li>
+            <li>Web Design and Coding</li>
+        </ul>
+    </section>
+
+    <!-- Useful Hyperlink Section -->
+    <section>
+        <h2>Learn More About My Hobby</h2>
+        <p>
+            If you want to learn more about photography tips and gear, visit 
+            <a href="https://www.nationalgeographic.com/photography" target="_blank">National Geographic Photography</a>.
+        </p>
+    </section>
+
+</body>
+</html>
