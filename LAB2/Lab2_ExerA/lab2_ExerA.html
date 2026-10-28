@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculty Event & Registration</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>UMT Tech Day 2026</h1>
+        <p>Empowering the Next Generation of Computer Scientists</p>
+    </header>
+
+<!-- Navigation Menu -->
+    <nav>
+        <a href="#about">About Event</a> | 
+        <a href="#schedule">Event Schedule</a> | 
+        <a href="#register">Registration</a>
+    </nav>
+    <hr>
+
+<!-- Section 1: About the Event -->
+    <section id="about">
+        <h2>About the Event</h2>
+        
+        <article>
+            <h3>Keynote Speaker: Dr. Sarah Ahmad</h3>
+            <p>Dr. Sarah is an AI researcher who will present on the future of web development and automated intelligence.</p>
+        </article>
+
+        <article>
+            <h3>Hands-on Workshop: Web Security 101</h3>
+            <p>Learn the basics of securing HTML forms, data validation, and preventing basic cyber vulnerabilities.</p>
+        </article>
+    </section>
+    <hr>
+
+<!-- Section 2: Event Schedule Table -->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <table border="1">
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person in Charge</th>
+            </tr>
+            <tr>
+                <td>08:30 AM - 09:00 AM</td>
+                <td>Registration & Breakfast</td>
+                <td>Main Foyer</td>
+                <td>Dr. Sarah</td>
+            </tr>
+            <tr>
+                <td>09:00 AM - 10:30 AM</td>
+                <td>Keynote Address: Future of Web</td>
+                <td rowspan="2">Auditorium A</td>
+                <td>Dr. Sarah</td>
+            </tr>
+            <tr>
+                <td>10:30 AM - 12:30 PM</td>
+                <td>Hands-on Workshop: Web Security</td>
+                <td>Mr. Hafiz</td>
+            </tr>
+            <tr>
+                <td>12:30 PM - 02:00 PM</td>
+                <td colspan="3">Lunch Break & Networking</td>
+            </tr>
+            <tr>
+                <td>02:00 PM - 04:00 PM</td>
+                <td>Coding Competition</td>
+                <td>Lab 3 & 4</td>
+                <td>Dr. Aminah</td>
+            </tr>
+            <tr>
+                <td>04:00 PM - 05:00 PM</td>
+                <td>Closing & Prize Giving Ceremony</td>
+                <td>Auditorium A</td>
+                <td>Dr. Sarah</td>
+            </tr>
+        </table>
+    </section>
+    <hr>
+
+<!-- Section 3: Registration Form -->
+    <section id="register">
+        <h2>Event Registration Form</h2>
+        
+        <form action="register.html" method="post">
+            
+            <!-- Full Name Input -->
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <!-- Matric Number Input -->
+            <label for="matric">Matric Number:</label><br>
+            <input type="text" id="matric" name="matric" required><br><br>
+
+            <!-- E-mail Input -->
+            <label for="email">E-mail Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Year of Study (Radio Buttons) -->
+            <label>Year of Study:</label><br>
+            <input type="radio" id="year1" name="year" value="1">
+            <label for="year1">Year 1</label>
+            <input type="radio" id="year2" name="year" value="2">
+            <label for="year2">Year 2</label>
+            <input type="radio" id="year3" name="year" value="3">
+            <label for="year3">Year 3</label>
+            <input type="radio" id="year4" name="year" value="4">
+            <label for="year4">Year 4</label><br><br>
+
+            <!-- Sessions to Join (Checkboxes) -->
+            <label>Sessions to Join:</label><br>
+            <input type="checkbox" id="keynote" name="sessions" value="keynote">
+            <label for="keynote">Keynote Address</label><br>
+            <input type="checkbox" id="workshop" name="sessions" value="workshop">
+            <label for="workshop">Web Security Workshop</label><br>
+            <input type="checkbox" id="competition" name="sessions" value="competition">
+            <label for="competition">Coding Competition</label><br><br>
+
+            <!-- Programme / Faculty Dropdown -->
+            <label for="programme">Programme / Faculty:</label><br>
+            <select id="programme" name="programme">
+                <option value="cs">Computer Science (Software Engineering)</option>
+                <option value="cyber">Cyber Security</option>
+                <option value="ds">Data Science</option>
+                <option value="it">Information Technology</option>
+            </select><br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register Now">
+
+        </form>
+    </section>
+    <hr>
+
+<!-- Footer Section -->
+    <footer>
+        <p>Organised by Faculty of Computer Science and Mathematics, UMT</p>
+        <p>&copy; 2026 UMT Tech Day. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
