@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab Exercise 3 - Interactive Contact Form</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        <h1>Contact Us</h1>
+        <span>We would love to hear your feedback!</span>
+    </div>
+
+    <hr>
+
+    <!-- Content Section -->
+    <div id="content">
+        <!-- Contact Form -->
+        <h2>Submit Your Details</h2>
+        <form action="#" method="post">
+            <p>
+                Email Address: <br>
+                <input type="email" name="useremail" placeholder="example@email.com" required>
+            </p>
+            <p>
+                Preferred Contact Date: <br>
+                <input type="date" name="contactdate" required>
+            </p>
+            <p>
+                Satisfaction Level (0 to 10): <br>
+                <input type="range" name="satisfaction" min="0" max="10" step="1" value="5">
+            </p>
+            <p>
+                <input type="submit" value="Submit Request">
+            </p>
+        </form>
+
+        <hr>
+
+        <!-- Inline Calculator Section -->
+        <div id="calculator">
+            <h2>Inline Quick Calculator</h2>
+            <form oninput="z.value = parseInt(x.value || 0) + parseInt(y.value || 0)">
+                First Number: <br>
+                <input type="number" id="x" value="0">
+                <br><br>
+                Second Number: <br>
+                <input type="number" id="y" value="0">
+                <br><br>
+                <strong>Total Sum: </strong>
+                <output name="z" for="x y">0</output>
+            </form>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <p>Contact Info: support@example.com | Phone: +6012-3456789</p>
+        <p>&copy; 2026 My Web Page. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
