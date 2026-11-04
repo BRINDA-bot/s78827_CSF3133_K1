@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusBake - Online Order</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <h1>CampusBake&reg; <span>- Freshly Baked Daily on Campus!</span></h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div id="nav">
+        <a href="#content">Order Online</a> | 
+        <a href="#sidebar">Price List</a> | 
+        <a href="#footer">Contact Us</a>
+    </div>
+
+    <!-- Main Content Section -->
+    <div id="content">
+        <h2>Welcome to CampusBake</h2>
+        <p>
+            Welcome to <strong>CampusBake</strong>, your favorite spot for <em>delicious</em> treats! 
+            Check out our special <span style="color: darkred;">daily offers</span> or place your 
+            custom pre-orders below. Learn more about our menu on our <a href="#sidebar">price list</a>.
+        </p>
+
+        <div>
+            <h3>Place Your Pre-Order</h3>
+            <form action="#" method="post" oninput="total.value = (parseFloat(cupcakes.value || 0) * 3 + parseFloat(slices.value || 0) * 5).toFixed(2)">
+                
+                <!-- Customer Name -->
+                <label for="cname">Customer Name:</label><br>
+                <input type="text" id="cname" name="cname" placeholder="Enter full name" required autofocus><br><br>
+
+                <!-- Phone Number & Email -->
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="e.g., 012-3456789" required><br><br>
+
+                <label for="email">E-mail Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="example@domain.com" required><br><br>
+
+                <!-- Pick-up Date & Time -->
+                <label for="pickdate">Pick-up Date:</label><br>
+                <input type="date" id="pickdate" name="pickdate" required><br><br>
+
+                <label for="picktime">Pick-up Time:</label><br>
+                <input type="time" id="picktime" name="picktime" required><br><br>
+
+                <!-- Datalist Flavour -->
+                <label for="flavour">Select Flavour:</label><br>
+                <input type="text" id="flavour" name="flavour" list="flavours" placeholder="Choose or type a flavour">
+                <datalist id="flavours">
+                    <option value="Chocolate Fudge">
+                    <option value="Red Velvet">
+                    <option value="Vanilla Bean">
+                    <option value="Matcha Green Tea">
+                </datalist><br><br>
+
+                <!-- Icing Color & Sweetness Range Slider -->
+                <label for="icing">Icing Colour:</label><br>
+                <input type="color" id="icing" name="icing" value="#ffb6c1"><br><br>
+
+                <label for="sweetness">Sweetness Level (1 to 5):</label><br>
+                <input type="range" id="sweetness" name="sweetness" min="1" max="5" step="1" value="3"><br><br>
+
+                <!-- Price Calculator -->
+                <fieldset>
+                    <legend><strong>Price Calculator</strong></legend>
+                    <label for="cupcakes">Cupcakes (RM 3.00 each):</label><br>
+                    <input type="number" id="cupcakes" name="cupcakes" min="0" value="0"><br><br>
+
+                    <label for="slices">Cake Slices (RM 5.00 each):</label><br>
+                    <input type="number" id="slices" name="slices" min="0" value="0"><br><br>
+
+                    <p>Total Price: RM <output name="total" for="cupcakes slices">0.00</output></p>
+                </fieldset><br>
+
+                <!-- Submit Button -->
+                <input type="submit" value="Submit Order">
+            </form>
+        </div>
+    </div>
+
+    <!-- Sidebar Section -->
+    <div id="sidebar">
+        <h3>Price List & Offers</h3>
+        <ul>
+            <li>Cupcake &ndash; RM 3.00</li>
+            <li>Cake Slice &ndash; RM 5.00</li>
+            <li>Whole Cake &ndash; RM 45.00</li>
+            <li>Cookie Pack &ndash; RM 8.00</li>
+        </ul>
+        <p>Special Note: Orders &gt; 10 pieces get a free drink!</p>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <p>&copy; 2026 CampusBake&reg; &nbsp;|&nbsp; All rights reserved. Prices in &euro; / &pound; available upon request.</p>
+        <p>You can contact us by calling <strong>09-668 4100</strong> or SMS to <strong>012-3456789</strong>.</p>
+    </div>
+</body>
+</html>
