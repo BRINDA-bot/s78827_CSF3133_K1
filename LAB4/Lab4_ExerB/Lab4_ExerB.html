@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-Café Campus</title>
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="cafe.css">
+  <style>
+    /* Internal CSS for Heading, Text, Intro, and Highlights */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FDFEFE;
+    }
+    header, section, footer {
+      padding: 15px 25px;
+    }
+    header {
+      background-color: #FDEBD0;
+      text-align: center;
+    }
+    h1 {
+      text-decoration: overline;
+      color: #6F4E37;
+    }
+    p {
+      color: #333333;
+      text-align: justify;
+    }
+    .intro {
+      font-size: 18px;
+      background-color: #FDEBD0;
+      padding: 10px;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #C0392B;
+    }
+    footer {
+      background-color: #6F4E37;
+      color: #FFFFFF;
+    }
+    footer p, footer a:link, footer a:visited {
+      color: #FFFFFF;
+    }
+    footer a:hover {
+      color: #E67E22;
+    }
+    footer a:active {
+      color: #C0392B;
+    }
+  </style>
+</head>
+<body>
+  <!-- Error 1 (Line 7): HTML comment syntax used inside style block instead of CSS comment syntax. -->
+  <!-- Error 2 (Line 9): Invalid value 'no' for list-style-type; corrected to 'none'. -->
+  <!-- Error 3 (Line 14-15): a:hover placed before a:visited, preventing hover from working on visited links; reordered to link -> visited -> hover -> active. -->
+  <!-- Error 4 (Line 17): Invalid value 'overlined' for text-decoration; corrected to 'overline'. -->
+  <!-- Error 5 (Line 18): Missing colon after 'color' property; corrected to 'color: #333333;'. -->
+  <!-- Error 6 (Line 19-21): Missing closing curly brace '}' for #intro rule. -->
+  <!-- Error 7 (Line 22): Missing dot '.' before class selector 'highlight'; corrected to '.highlight'. -->
+  <!-- Error 8 (Line 34): Missing '#' in href="menu"; corrected to href="#menu". -->
+  <!-- Error 9 (Line 40 & 42): Article tag opened inside p tag and duplicate id="item" used; fixed closing p tag and changed duplicate IDs to class="item". -->
+  <!-- Error 10 (Line 53-54): Missing 'controls' attribute on video tag and invalid MIME type="mp4"; added 'controls' and changed type to "video/mp4". -->
+
+  <!-- Header Section -->
+  <header>
+    <h1>e-Café Campus</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#feedback">Feedback</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Menu Section with Promotions -->
+  <section id="menu">
+    <h2>Today's Menu</h2>
+    <p class="intro">Freshly brewed coffee and local delights every day.</p>
+    <article class="item">
+      <h3>Kopi Tarik</h3>
+      <p>Promotion: <span class="old-price">RM 4.50</span> Only <span class="highlight">RM 3.50</span></p>
+    </article>
+    <article class="item">
+      <h3>Nasi Lemak</h3>
+      <p>Promotion: <span class="old-price">RM 6.50</span> Only <span class="highlight">RM 5.00</span></p>
+    </article>
+  </section>
+
+  <!-- Video Section with Figure and Figcaption -->
+  <section id="video">
+    <h2>Watch Our Story</h2>
+    <figure>
+      <video width="400" height="300" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <figcaption>Figure 1: Behind the scenes at e-Café Campus.</figcaption>
+    </figure>
+  </section>
+
+  <!-- Feedback Form Section -->
+  <section id="feedback">
+    <h2>Customer Feedback</h2>
+    <form class="feedback-form" action="#" method="post">
+      <label for="cust-name"><strong>Name:</strong></label><br>
+      <input type="text" id="cust-name" name="name" placeholder="Your name" required><br>
+
+      <label for="cust-email"><strong>E-mail:</strong></label><br>
+      <input type="email" id="cust-email" name="email" placeholder="Your email" required><br>
+
+      <p><strong>Visit Type:</strong></p>
+      <label><input type="radio" name="visit" value="dine-in" required> Dine-in</label>
+      <label><input type="radio" name="visit" value="take-away"> Take-away</label>
+
+      <p><strong>Favourite Items:</strong></p>
+      <label><input type="checkbox" name="fav" value="kopi-tarik"> Kopi Tarik</label>
+      <label><input type="checkbox" name="fav" value="nasi-lemak"> Nasi Lemak</label>
+      <label><input type="checkbox" name="fav" value="roti-bakar"> Roti Bakar</label>
+
+      <br><br>
+      <input type="submit" value="Submit Feedback">
+    </form>
+  </section>
+
+  <!-- Footer Section with Address -->
+  <footer id="contact">
+    <p>&copy; 2026 e-Café Campus</p>
+    <address>
+      Email us at <a href="mailto:ecafe@umt.edu.my">ecafe@umt.edu.my</a>
+    </address>
+  </footer>
+</body>
+</html>
