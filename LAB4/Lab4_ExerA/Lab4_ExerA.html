@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Terengganu - Tourism Promotion</title>
+
+  <!-- External CSS Link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS Rules for This Page Only -->
+  <style>
+    .seat-box {
+      background-color: #fff3cd;
+      border: 1px solid #ffeeba;
+      padding: 12px;
+      margin-top: 15px;
+    }
+
+    .center {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header id="top">
+    <h1>Visit Terengganu 2026</h1>
+    <p>Discover Beautiful Islands, Rich Culture, and Delicious Local Cuisine</p>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#video">Promo Video</a></li>
+      <li><a href="#trip">Book Trip</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Container -->
+  <div id="container">
+
+    <!-- Destinations Section -->
+    <section id="destinations">
+      <h2>Top Student &amp; Visitor Destinations</h2>
+
+      <article class="card">
+        <h3>Pulau Redang</h3>
+        <p>Experience crystal-clear turquoise waters, white sandy beaches, and world-class snorkeling spots.</p>
+        <p>Promotion Price: <span class="old-price">RM 299</span> <span class="new-price">RM 199</span></p>
+      </article>
+
+      <article class="card">
+        <h3>Drawbridge &amp; Pasar Payang</h3>
+        <p>Explore Kuala Terengganu's iconic drawbridge and shop for traditional batik, songket, and keropok lekor.</p>
+        <p>Promotion Price: <span class="old-price">RM 120</span> <span class="new-price">RM 75</span></p>
+      </article>
+
+      <article class="card">
+        <h3>Tasik Kenyir</h3>
+        <p>Enjoy waterfall trekking, houseboat stays, and lush tropical rainforest adventures at Southeast Asia's largest man-made lake.</p>
+        <p>Promotion Price: <span class="old-price">RM 250</span> <span class="new-price">RM 165</span></p>
+      </article>
+
+      <!-- Trip Seats Meter -->
+      <div class="seat-box">
+        <p><strong>Weekend Student Package Seats Filled:</strong> 28 out of 40 seats</p>
+        <meter min="0" max="40" value="28">28 out of 40</meter>
+      </div>
+    </section>
+
+    <!-- Promotional Video Section -->
+    <section id="video" class="center">
+      <h2>Promotional Video</h2>
+      <figure>
+        <video width="640" height="360" controls>
+  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+       </video>
+        <figcaption class="caption">Figure 1: Highlights of Terengganu islands and cultural heritage.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Trip Interest Form Section -->
+    <section id="trip">
+      <h2>Trip Interest Registration</h2>
+      <form class="trip-form" action="#" method="post">
+        <label for="name"><strong>Name:</strong></label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br>
+
+        <label for="email"><strong>E-mail:</strong></label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required><br>
+
+        <p><strong>Traveller Type:</strong></p>
+        <label><input type="radio" name="traveller" value="student" required> Student</label>
+        <label><input type="radio" name="traveller" value="staff"> Staff</label>
+        <label><input type="radio" name="traveller" value="public"> Public</label>
+
+        <p><strong>Interests:</strong></p>
+        <label><input type="checkbox" name="interests" value="islands"> Islands</label>
+        <label><input type="checkbox" name="interests" value="food"> Food</label>
+        <label><input type="checkbox" name="interests" value="culture"> Culture</label>
+        <label><input type="checkbox" name="interests" value="nature"> Nature</label>
+
+        <br><br>
+        <input type="submit" value="Submit Interest">
+      </form>
+    </section>
+
+  </div>
+
+  <!-- Footer Section -->
+  <footer id="contact">
+    <p>&copy; 2026 Terengganu State Tourism Office</p>
+    <address>
+      Contact us at <a href="mailto:tourism@terengganu.gov.my">tourism@terengganu.gov.my</a>
+    </address>
+  </footer>
+
+</body>
+</html>
