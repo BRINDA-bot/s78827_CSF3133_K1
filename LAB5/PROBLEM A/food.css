@@ -1,0 +1,108 @@
+/* Base styles and Container limit */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FBF7F0;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, th {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Header Background */
+header {
+    background-image: url("header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2C2C2C;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+nav li a.active {
+    background-color: #E67E22;
+}
+
+/* Styled Table */
+#stalls {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#stalls td, #stalls th {
+    border: 1px solid #ddd;
+    padding: 12px 8px;
+}
+
+#stalls th {
+    background-color: #E67E22;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+#stalls tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+#stalls tr:hover {
+    background-color: #FDEBD0;
+}
+
+.price {
+    text-align: right;
+}
+
+/* Footer */
+footer {
+    background-color: #EFE6D8;
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
