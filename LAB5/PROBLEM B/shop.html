@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Campus Bookstore</title>
+    <!-- 
+      ERRORS FIXED:
+      Error 1 (shop.html, Line 7): Changed rel="stylesheets" to rel="stylesheet".
+      Error 2 (shop.html, Line 18): Changed color=#1B4F72 to color:#1B4F72 (inline style syntax).
+      Error 3 (shop.css, Line 2): Misspelled 'Robotto' changed to 'Roboto'.
+      Error 4 (shop.css, Line 4): 'no repeat' changed to 'no-repeat'.
+      Error 5 (shop.css, Line 5): Misspelled 'bacground-position' changed to 'background-position'.
+      Error 6 (shop.css, Line 18): Changed display: inline to display: block for nav links.
+      Error 7 (shop.css, Line 23): Changed li:a:hover to li a:hover.
+      Error 8 (shop.css, Line 26 & 30 & 34 & 37 & 40): Changed #products to #product to match HTML id.
+      Error 9 (shop.css, Line 27): Changed border-collapse: collapsed to border-collapse: collapse.
+      Error 10 (shop.css, Line 34): Changed tr:nth-child(2) to tr:nth-child(even).
+      Error 11 (shop.css, Line 37): Changed tr:hovered to tr:hover.
+      Error 12 (shop.css, Line 45): Added missing semicolon after background-color.
+    -->
+    
+    <!-- Link Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+
+    <!-- Added Semantic Structure: header -->
+    <header>
+        <h1 style="color:#ffffff;">Campus Bookstore</h1>
+        <p>Textbooks, stationery and more for every student.</p>
+    </header>
+
+    <!-- Added Semantic Structure: nav -->
+    <nav>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Added Semantic Structure: main -->
+    <main>
+        <table id="product">
+            <tr>
+                <th>Item</th>
+                <th>Category</th>
+                <th style="text-align: right;">Price (RM)</th>
+            </tr>
+            <tr><td>Web Design Basics</td><td>Textbook</td><td style="text-align: right;">45.00</td></tr>
+            <tr><td>A4 Notebook</td><td>Stationery</td><td style="text-align: right;">6.50</td></tr>
+            <tr><td>USB Drive 32GB</td><td>Gadget</td><td style="text-align: right;">25.00</td></tr>
+            <tr><td>Highlighter Set</td><td>Stationery</td><td style="text-align: right;">9.90</td></tr>
+        </table>
+    </main>
+
+    <!-- Added Semantic Structure: footer -->
+    <footer>&copy; 2026 Campus Bookstore</footer>
+
+</body>
+</html>

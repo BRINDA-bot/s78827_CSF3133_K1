@@ -1,0 +1,99 @@
+/* Body and Font Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("paper.gif"); 
+    background-repeat: no-repeat; /* Fixed: was 'no repeat'*/
+    background-position: right top; /* Fixed: was 'bacground-position' */
+    margin: 0; 
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif; /* Extended: Added second font */
+}
+
+p {
+    line-height: 1.6; /* Extended: Added line-height */
+}
+
+/* Header Background Extended */
+header {
+    background-image: url("books.jpg"); /* Assumes books.jpg is the background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block; /* Fixed: was inline */
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover { /* Fixed: was li:a:hover */
+    background-color: #111;
+}
+
+nav li a.active { /* Extended: Added active class */
+    background-color: #04AA6D;
+}
+
+/* Main content wrapper */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Table Styling */
+#product { /* Fixed: was #products */
+    border-collapse: collapse; /* Fixed: was collapsed */
+    width: 100%;
+}
+
+#product td, #product th { /* Fixed: was #products */
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#product tr:nth-child(even) { /* Fixed: was nth-child(2) */
+    background-color: #f2f2f2;
+}
+
+#product tr:hover { /* Fixed: was tr:hovered */
+    background-color: #ddd;
+}
+
+#product th { /* Fixed: was #products th */
+    background-color: #04AA6D;
+    color: white;
+    text-transform: uppercase; /* Extended: uppercase header[cite: 25] */
+    text-align: center; /* Extended: centered header[cite: 25] */
+    padding-top: 12px; /* Extended: padding[cite: 25] */
+    padding-bottom: 12px; /* Extended: padding[cite: 25] */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f1f1f1; /* Fixed: added semicolon[cite: 24] */
+    text-align: center;
+    padding: 20px; /* Extended: increased padding[cite: 25] */
+    margin-top: 40px;
+}
