@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <!-- Header introducing the quiz -->
+        <header>
+            <h1>Web Development Quiz</h1>
+            <p>Test your HTML, CSS, and JavaScript knowledge!</p>
+        </header>
+
+        <!-- Start Screen -->
+        <section id="start-section">
+            <p>You will have <strong>15 seconds</strong> per question. Questions are randomized every time you play.</p>
+            <button id="start-btn" class="btn">Start Quiz</button>
+        </section>
+
+        <!-- Quiz Section: Questions, Options, and Timer -->
+        <section id="quiz-section" class="hidden">
+            <div class="quiz-header">
+                <span id="question-progress">Question 1 of 5</span>
+                <span id="timer">Time Left: 15s</span>
+            </div>
+
+            <h2 id="question-text">Question goes here</h2>
+
+            <div id="options-container" class="options-grid">
+                <!-- Option buttons will be generated dynamically by JS -->
+            </div>
+
+            <!-- Feedback Section -->
+            <div id="feedback-section" class="feedback hidden"></div>
+
+            <!-- Navigation / Submit Controls -->
+            <div class="controls">
+                <button id="submit-btn" class="btn" disabled>Submit Answer</button>
+                <button id="next-btn" class="btn hidden">Next Question</button>
+            </div>
+        </section>
+
+        <!-- Footer displaying final score -->
+        <footer id="score-footer" class="hidden">
+            <h3>Quiz Completed!</h3>
+            <p id="final-score">Your Score: 0 / 5</p>
+            <button id="restart-btn" class="btn">Play Again</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
